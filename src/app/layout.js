@@ -1,7 +1,7 @@
 import { Header } from "../components/header/Header.jsx";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Providers from "./providers.jsx";
+import Providers from "./Providers.jsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
