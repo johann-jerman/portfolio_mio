@@ -3,14 +3,14 @@ import ButtonTheme from "./ButtonTheme";
 
 export const Header = () => {
   return (
-    <header className="flex justify-between items-center dark:bg-n">
+    <header className="flex justify-between items-center max-w-6xl m-auto py-3 text-xl border-b-2 border-black dark:border-white border-solid dark:bg-n">
       <Link href={"/"}>
-        <p>Home</p>
+        <p className=" hover:underline">Home</p>
       </Link>
-      <ul className="flex justify-center items-center gap-4 ">
+      <ul className="flex justify-center items-center gap-x-6">
         <ButtonTheme />
         <Link href={"/pokedex"}>
-          <li>Projectos</li>
+          <li className=" hover:underline">Projectos</li>
         </Link>
       </ul>
     </header>
