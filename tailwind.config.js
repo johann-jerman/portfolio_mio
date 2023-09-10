@@ -16,12 +16,16 @@ module.exports = {
       backgroundColor: {
         n: "#16181C",
         b: "#ffffff",
-        bc: "#f5f5ee"
+        bc: "#f5f5ee",
+        "a-o": "#136365",
+        "a-c": "#1b8d90",
       },
       textColor: {
         n: "#16181C",
         b: "#ffffff",
-        bc: "#f5f5ee"
+        bc: "#f5f5ee",
+        "a-o": "#136365",
+        "a-c": "#1b8d90",
       }
     },
   },
