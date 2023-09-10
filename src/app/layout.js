@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" 
-    className="light"  style={{colorScheme: "light"}}
+    className="light min-h-screen"  style={{colorScheme: "light"}}
     >
       <body className={inter.className + " bg-bc dark:bg-n"}>
         <Providers>

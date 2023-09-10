@@ -9,7 +9,7 @@ export const Header = () => {
       </Link>
       <ul className="flex justify-center items-center gap-x-6">
         <ButtonTheme />
-        <Link href={"/pokedex"}>
+        <Link href={"/projectos"}>
           <li className=" hover:underline">Projectos</li>
         </Link>
       </ul>
