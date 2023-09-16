@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import "./pokedex.css";
 import { gen, genButton, selectImage } from "./Utils";
+import Image from "next/image";
 
 let limit = 151;
 let offset = 0;
@@ -158,7 +159,7 @@ export default function Pokedex() {
       </section>
       {/* Seccion bateria pokedex */}
       {pokedex.length == 0 && (
-        <h1 className="m-50 text-center text-2xl">
+        <h1 className="m-50 text-center text-2xl min-h-screen">
           Cargando Bateria De La Pokedex...
         </h1>
       )}
@@ -181,12 +182,20 @@ export default function Pokedex() {
             "
                 key={pokemon.name}
               >
-                <img
+                <Image
+                  className="absolute left-1/2 -top-2/4 -translate-x-1/2"
+                  src={pokemon.sprites.front_default}
+                  width={95}
+                  height={90}
+                  alt={pokemon.name}
+                  // fill
+                />
+                {/* <img
                   className="absolute left-1/2 -top-2/4 -translate-x-1/2"
                   src={pokemon.sprites.front_default}
                   alt={pokemon.name}
-                />
-                <p className="text-grey-100 text-center text-xs">
+                /> */}
+                <p className="text-grey-100 text-center text-sm">
                   N° {pokemon.id}
                 </p>
                 <h3 className="text-center text-xl">{pokemon.name}</h3>
@@ -224,11 +233,18 @@ export default function Pokedex() {
             bg-b text-red-400
             flex items-center justify-center"
               ></div>
-              <img
+              <Image
+                className="m-auto pb-2 max-h-24 max-w-sm"
+                src={pokemonImage.image}
+                alt={pokemon.name}
+                width={85}
+                height={90}
+              />
+              {/* <img
                 className="m-auto pb-2"
                 src={pokemonImage.image}
                 alt={pokemon.name}
-              />
+              /> */}
               <div
                 onClick={handleShiny}
                 className="fa-solid fa-star bg-yellow-400 flex justify-center items-center p-1 rounded-full text-orange-400 absolute right-3 top-3"
@@ -241,8 +257,8 @@ export default function Pokedex() {
                 // "
               ></div>
               <p className="text-center text-xs">N° {pokemon.id}</p>
-              <p className="text-center">Descripcion:</p>
-              <p className="text-center p-2 m-2 bg-b rounded">
+              <p className="text-center ">Descripcion:</p>
+              <p className="text-center p-2 m-2 text-sm bg-b rounded">
                 {pokemon.entry}
               </p>
               <div className="flex justify-around">
@@ -276,7 +292,10 @@ export default function Pokedex() {
               <div className="flex justify-around">
                 {pokemon.abilities?.map((ab, i) => {
                   return (
-                    <p key={i} className="w-1/3 rounded mx-5 bg-b text-center">
+                    <p
+                      key={i}
+                      className="w-1/3 rounded mx-5 bg-bc flex justify-center items-center"
+                    >
                       {ab.ability.name}
                     </p>
                   );

@@ -19,6 +19,7 @@ module.exports = {
         bc: "#f5f5ee",
         "a-o": "#136365",
         "a-c": "#1b8d90",
+        rc: "#C4B5FD"
       },
       textColor: {
         n: "#16181C",

@@ -45,7 +45,7 @@ export default function Home() {
           src={"/image/johannImage.jpg"}
           className=" rounded-full"
           width={200}
-          height={1}
+          height={200}
           alt="Picture of the author"
           style={{ objectFit: "contain" }}
         />

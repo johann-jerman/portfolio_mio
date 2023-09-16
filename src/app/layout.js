@@ -14,7 +14,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" 
-    className="light min-h-screen"  style={{colorScheme: "light"}}
+    className="min-h-screen dark"  
+    style={{colorScheme: "dark"}}
     >
       <body className={inter.className + " bg-bc dark:bg-n"}>
         <Providers>
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
             {children}
           <footer></footer>
         </Providers>
-        <Script src="https://kit.fontawesome.com/28e80e8067.js" crossOrigin="anonymous"/>
+        <Script src="https://kit.fontawesome.com/28e80e8067.js" />
       </body>
     </html>
   );
