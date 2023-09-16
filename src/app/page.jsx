@@ -9,7 +9,42 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex justify-between py-4 my-6 max-w-6xl m-auto  bg-bc dark:bg-n">
+    <main className="min-h-screen flex flex-col md:flex-row justify-between py-4 my-6 max-w-6xl m-auto  bg-bc dark:bg-n">
+      <aside className="">
+        <Image
+          src={"/image/johannImage.jpg"}
+          className=" m-auto rounded-full"
+          width={200}
+          height={200}
+          alt="Picture of the author"
+          style={{ objectFit: "contain" }}
+        />
+        <div className="flex justify-between py-3 mx-5 text-xl">
+          <Link
+            className="hover:text-a-c"
+            href={"https://www.linkedin.com/in/johannjerman/"}
+            target="_blank"
+          >
+            {linkedinIcon}
+          </Link>
+          <Link
+            className=""
+            href={"https://github.com/johann-jerman"}
+            target="_blank"
+          >
+            {githubIcon}
+          </Link>
+          <Link
+            className="hover:text-red-600"
+            href={"johannjerman014@gmail.com"}
+          >
+            {mailIcon}
+          </Link>
+          <Link className="hover:text-a-o" href={""} download={"/cv/cv.pdf"}>
+            {fileDownlodaIcon}
+          </Link>
+        </div>
+      </aside>
       <article className=" max-w-xl">
         <h1 className=" text-5xl text-a-c my-2 hover:underline">
           Johann Jerman
@@ -40,41 +75,6 @@ export default function Home() {
           <p></p>
         </div>
       </article>
-      <aside className="">
-        <Image
-          src={"/image/johannImage.jpg"}
-          className=" rounded-full"
-          width={200}
-          height={200}
-          alt="Picture of the author"
-          style={{ objectFit: "contain" }}
-        />
-        <div className="flex justify-between py-3 text-xl">
-          <Link
-            className="hover:text-a-c"
-            href={"https://www.linkedin.com/in/johannjerman/"}
-            target="_blank"
-          >
-            {linkedinIcon}
-          </Link>
-          <Link
-            className=""
-            href={"https://github.com/johann-jerman"}
-            target="_blank"
-          >
-            {githubIcon}
-          </Link>
-          <Link
-            className="hover:text-red-600"
-            href={"johannjerman014@gmail.com"}
-          >
-            {mailIcon}
-          </Link>
-          <Link className="hover:text-a-o" href={""} download={"/cv/cv.pdf"}>
-            {fileDownlodaIcon}
-          </Link>
-        </div>
-      </aside>
     </main>
   );
 }
