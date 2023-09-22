@@ -36,7 +36,7 @@ export default function Home() {
           </Link>
           <Link
             className="hover:text-red-600"
-            href={"johannjerman014@gmail.com"}
+            href={"mailto:johannjerman014@gmail.com"}
           >
             {mailIcon}
           </Link>

@@ -45,7 +45,7 @@ export default function Todo() {
             onKeyUp={createTask}
           />
           <div
-            className="rounded bg-red-500 text-white p-3 mx-5"
+            className="rounded bg-red-500 text-white p-3 mx-5 cursor-pointer"
             onClick={deleteAll}
           >
             Eliminar Todo:
