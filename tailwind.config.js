@@ -27,6 +27,9 @@ module.exports = {
         bc: "#f5f5ee",
         "a-o": "#136365",
         "a-c": "#1b8d90",
+        "am": "#EFD81D",
+        "or": "#F1672B",
+        "cel": "#2277FF",
       }
     },
   },

@@ -1,5 +1,5 @@
 "use client";
-import { moonIcon, sunIcon } from "@/icons/icons";
+import { moonIcon, sunIcon } from "@/app/icons/icons";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 

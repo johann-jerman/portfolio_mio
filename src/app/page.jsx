@@ -3,7 +3,7 @@ import {
   fileDownlodaIcon,
   linkedinIcon,
   mailIcon,
-} from "@/icons/icons";
+} from "@/app/icons/icons";
 import Image from "next/image";
 import Link from "next/link";
 
