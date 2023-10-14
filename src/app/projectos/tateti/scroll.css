@@ -1,0 +1,27 @@
+/* Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 10px;
+  padding: 3px;
+}
+
+/* Estilo para la manija de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background: #323a3f; /* Color de fondo de la manija */
+  border-radius: 6px; /* Radio de borde de la manija */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  display: none;
+}
+
+/* Estilo para los botones de desplazamiento (flechas) */
+::-webkit-scrollbar-button {
+  background: #555; /* Color de fondo de los botones de desplazamiento */
+  display: none;
+}
+
+/* Estilo para los bordes de la barra de desplazamiento */
+::-webkit-scrollbar-track-piece {
+  display: none;
+}

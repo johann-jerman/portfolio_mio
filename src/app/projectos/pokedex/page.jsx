@@ -188,7 +188,6 @@ export default function Pokedex() {
                   width={95}
                   height={90}
                   alt={pokemon.name}
-                  // fill
                 />
                 {/* <img
                   className="absolute left-1/2 -top-2/4 -translate-x-1/2"
