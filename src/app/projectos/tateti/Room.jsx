@@ -64,11 +64,19 @@ export default function Room({ socket }) {
           <div className="bg-[#005C4B] text-lg  text-white max-w-fit p-3 rounded m-2">
             Numero de Sala: {roomCode}
           </div>
-          <div className="bg-[#005C4B] text-lg  text-white max-w-fit p-3 rounded m-2">
+          <div
+            className={`${
+              turn == "X" ? "bg-ros" : "bg-cel"
+            }  text-lg  text-white max-w-fit p-3 rounded m-2`}
+          >
             Tu Ficha Es: {turn}
           </div>
-          <div className="bg-[#005C4B] text-lg  text-white max-w-fit p-3 rounded m-2">
-            Turno Actual Es: {currentTurn}
+          <div
+            className={`${
+              currentTurn == "X" ? "bg-ros" : "bg-cel"
+            } text-lg  text-white max-w-fit p-3 rounded m-2`}
+          >
+            Turno Actual: {currentTurn}
           </div>
         </section>
       )}

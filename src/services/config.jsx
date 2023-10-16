@@ -1,1 +1,1 @@
-export const socketServer = "http://localhost:3004";
+export const socketServer = "https://socket-9ljp.onrender.com/";

@@ -19,7 +19,9 @@ module.exports = {
         bc: "#f5f5ee",
         "a-o": "#136365",
         "a-c": "#1b8d90",
-        rc: "#C4B5FD"
+        rc: "#C4B5FD",
+        "cel": "#2277FF",
+        "ros": "#FF76AE"
       },
       textColor: {
         n: "#16181C",
@@ -30,6 +32,7 @@ module.exports = {
         "am": "#EFD81D",
         "or": "#F1672B",
         "cel": "#2277FF",
+        "ros": "#FF76AE"
       }
     },
   },

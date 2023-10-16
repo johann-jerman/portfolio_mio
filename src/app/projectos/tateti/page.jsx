@@ -6,6 +6,7 @@ import Room from "./Room";
 import Chat from "./Chat";
 import { ChatProvider } from "@/app/context/chatContex";
 import Game from "./Game";
+import Wins from "./Wins";
 
 export default function Tateti() {
   const socket = io(socketServer);
@@ -15,6 +16,7 @@ export default function Tateti() {
         <Room socket={socket} />
         <Game socket={socket} />
         <Chat socket={socket} />
+        <Wins />
       </ChatProvider>
     </>
   );
