@@ -7,7 +7,7 @@ export default function Wins() {
   let [win, setWin] = useState("0");
   useEffect(() => {
     let isWin = winCondition(tateti);
-    if (isWin == "X" || isWin == "O") {
+    if (isWin == "X" || isWin == "O" || isWin == "Empate") {
       setWin(isWin);
       setTimeout(() => {
         setWin("0");
@@ -16,12 +16,12 @@ export default function Wins() {
           [0, 0, 0],
           [0, 0, 0],
         ]);
-      }, 5000);
+      }, 2500);
     }
   }, [tateti]);
   return (
     <section>
-      {(win == "X" || win == "O") && (
+      {(win == "X" || win == "O" || win == "Empate") && (
         <div
           className={`${
             win == "X" ? "bg-ros" : "bg-cel"
