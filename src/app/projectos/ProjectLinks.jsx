@@ -4,12 +4,44 @@ import JavaScript from "../icons/JavaScript";
 import Css from "../icons/CSS";
 import HTML from "../icons/HTML";
 import TailwndCss from "../icons/TailwndCss";
+import Express from "../icons/Express";
+import Node from "../icons/Node";
+import SocketIo from "../icons/Socket";
 
 const baseUrl = "/projectos/";
 const baseImg = "/project/";
 export const projectLinks = [
   {
-    name: "pokedex",
+    name: "Tateti Online",
+    url: `${baseUrl}tateti`,
+    img: `${baseImg}tateti.png`,
+    data: {
+      tecnologies: [
+        <i key={1} className="mx-2">
+          {<JavaScript />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<TailwndCss />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<Next />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<Node />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<Express />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<SocketIo />}
+        </i>,
+      ],
+      description:
+        "Proyecto de una Pokédex en línea desarrollada con la PokeAPI. Ofrece información detallada, búsqueda avanzada, imágenes, movimientos y más para todos los Pokémon. ¡Explora el mundo Pokémon en un solo lugar!",
+    },
+  },
+  {
+    name: "Pokedex",
     url: `${baseUrl}pokedex`,
     img: `${baseImg}pokedex.png`,
     data: {
@@ -38,7 +70,7 @@ export const projectLinks = [
     },
   },
   {
-    name: "memotest",
+    name: "Memotest",
     url: `${baseUrl}memotest`,
     img: `${baseImg}memotest.png`,
     data: {
@@ -67,7 +99,7 @@ export const projectLinks = [
     },
   },
   {
-    name: "todo",
+    name: "To Do",
     url: `${baseUrl}todo`,
     img: `${baseImg}todo2.png`,
     data: {
