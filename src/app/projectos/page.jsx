@@ -37,7 +37,7 @@ import Image from "next/image";
 // }
 function Projects() {
   return (
-    <main className=" max-w-6xl py-4 m-auto">
+    <main className=" max-w-6xl py-4 m-auto min-h-full">
       <section className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-items-center">
         {projectLinks.map((link, i) =>
           i % 2 == 0 ? (

@@ -128,7 +128,7 @@ export default function Pokedex() {
   };
 
   return (
-    <main className="py-4">
+    <main className="py-4 min-h-full">
       {/* Seccion generaciones de pokemon */}
       <div className="flex justify-center w-">
         <input

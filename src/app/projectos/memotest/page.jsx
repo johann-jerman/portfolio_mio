@@ -29,7 +29,7 @@ export default function MemoTest() {
   };
 
   return (
-    <main className="py-6">
+    <main className="py-6 min-h-full">
       <aside className="m-auto max-w-xs text-center">
         <div onClick={() => (start ? null : startPlay())}>
           {start ? "Da vuelta todas las fichas" : " Comenzar a jugar"}
