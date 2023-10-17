@@ -1,4 +1,10 @@
 import { cssIcon, htmlIcon, jsIcon, reactIcon } from "@/app/icons/icons";
+import Next from "../icons/Next";
+import React from "../icons/React";
+import JavaScript from "../icons/JavaScript";
+import Css from "../icons/CSS";
+import HTML from "../icons/HTML";
+import TailwndCss from "../icons/TailwndCss";
 
 const baseUrl = "/projectos/";
 const baseImg = "/project/";
@@ -10,20 +16,26 @@ export const projectLinks = [
     data: {
       tecnologies: [
         <i key={1} className="mx-2">
-          {htmlIcon}
+          {<HTML />}
         </i>,
         <i key={1} className="mx-2">
-          {cssIcon}
+          {<Css />}
         </i>,
         <i key={1} className="mx-2">
-          {jsIcon}
+          {<JavaScript />}
         </i>,
         <i key={1} className="mx-2">
-          {reactIcon}
+          {<React />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<TailwndCss />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<Next />}
         </i>,
       ],
       description:
-        "Mi proyecto es una replica del tipico juego de memoria donde tenemos que conseguir emparejas las parejas de fichas, el objetivo del juego es que la totalidad de las fichas esten dadas vuelta",
+        "Replica del tipico juego de memoria donde tenemos que conseguir emparejas las parejas de fichas, el objetivo del juego es que la totalidad de las parejas de fichas esten dadas vuelta",
     },
   },
   {
@@ -33,20 +45,26 @@ export const projectLinks = [
     data: {
       tecnologies: [
         <i key={1} className="mx-2">
-          {htmlIcon}
+          {<HTML />}
         </i>,
         <i key={1} className="mx-2">
-          {cssIcon}
+          {<Css />}
         </i>,
         <i key={1} className="mx-2">
-          {jsIcon}
+          {<JavaScript />}
         </i>,
         <i key={1} className="mx-2">
-          {reactIcon}
+          {<React />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<TailwndCss />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<Next />}
         </i>,
       ],
       description:
-        "Mi proyecto es una Pokédex en línea desarrollada con la PokeAPI. Ofrece información detallada, búsqueda avanzada, imágenes, movimientos y más para todos los Pokémon. Diseño responsivo y actualizaciones constantes. ¡Explora el mundo Pokémon en un solo lugar!",
+        "Proyecto de una Pokédex en línea desarrollada con la PokeAPI. Ofrece información detallada, búsqueda avanzada, imágenes, movimientos y más para todos los Pokémon. ¡Explora el mundo Pokémon en un solo lugar!",
     },
   },
   {
@@ -56,20 +74,26 @@ export const projectLinks = [
     data: {
       tecnologies: [
         <i key={1} className="mx-2">
-          {htmlIcon}
+          {<HTML />}
         </i>,
         <i key={1} className="mx-2">
-          {cssIcon}
+          {<Css />}
         </i>,
         <i key={1} className="mx-2">
-          {jsIcon}
+          {<JavaScript />}
         </i>,
         <i key={1} className="mx-2">
-          {reactIcon}
+          {<React />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<TailwndCss />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<Next />}
         </i>,
       ],
       description:
-        "Mi proyecto es una una aplicacion basica donde podes anotar tareas que tenes que realizar, con la capacidad de crear barias tareas y eliminarlas una vez que ya las allas finalizado",
+        "Proyecto basico donde podes anotar tareas que tenes que realizar, con la capacidad de crear barias tareas y eliminarlas una vez que ya las allas finalizado",
     },
   },
 ];

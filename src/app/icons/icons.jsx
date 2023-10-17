@@ -7,19 +7,19 @@ export const moonIcon = (
 );
 
 export const githubIcon = (
-  <i className="fa-brands fa-github text-black dark:text-white"></i>
+  <i className="fa-brands fa-github transition-all  hover:scale-125 text-black dark:text-white text-2xl lg:text-3xl "></i>
 );
 
 export const linkedinIcon = (
-  <i className="fa-brands fa-linkedin-in text-black dark:text-white"></i>
+  <i className="fa-brands fa-linkedin-in hover:text-a-o dark:hover:text-a-o transition-all  hover:scale-125 text-black dark:text-white text-2xl lg:text-3xl"></i>
 );
 
 export const fileDownlodaIcon = (
-  <i className="fa-solid fa-file-arrow-down text-black dark:text-white"></i>
+  <i className="fa-solid fa-file-arrow-down transition-all hover:text-cel dark:hover:text-cel hover:scale-125 text-2xl lg:text-3xl"></i>
 );
 
 export const mailIcon = (
-  <i className="fa-solid fa-envelope text-black dark:text-white"></i>
+  <i className="fa-solid fa-envelope dark:hover:text-roj hover:text-roj transition-all  hover:scale-125 text-2xl lg:text-3xl"></i>
 );
 
 export const htmlIcon = (
