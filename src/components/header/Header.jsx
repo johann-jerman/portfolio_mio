@@ -10,7 +10,7 @@ export const Header = () => {
       <ul className="flex justify-center items-center gap-x-6">
         <ButtonTheme />
         <Link href={"/projectos"}>
-          <li className=" hover:underline">Projectos</li>
+          <li className=" hover:underline">Proyectos</li>
         </Link>
       </ul>
     </header>

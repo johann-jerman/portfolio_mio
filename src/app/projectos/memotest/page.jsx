@@ -31,7 +31,10 @@ export default function MemoTest() {
   return (
     <main className="py-6 min-h-full">
       <aside className="m-auto max-w-xs text-center">
-        <div onClick={() => (start ? null : startPlay())}>
+        <div
+          className="text-xl bg-rc rounded py-3 cursor-pointer"
+          onClick={() => (start ? null : startPlay())}
+        >
           {start ? "Da vuelta todas las fichas" : " Comenzar a jugar"}
         </div>
       </aside>
@@ -42,7 +45,7 @@ export default function MemoTest() {
               onClick={handle}
               key={i}
               id={i}
-              className="m-4 p-4 bg-rc w-40 h-40 flex justify-center items-center rounded"
+              className="m-4 p-4 bg-rc w-40 h-40 flex justify-center items-center rounded cursor-pointer hover:scale-105 transition-all"
             >
               {icon}
             </div>

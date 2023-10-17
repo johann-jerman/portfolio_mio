@@ -65,7 +65,7 @@ export default function Home() {
       </article>
       <div className="md:col-span-2">
         <h2 className="my-12 mt-20 text-center col-span-2 text-4xl md:text-6xl">
-          Ultimos Projectos
+          Ultimos Proyectos
         </h2>
       </div>
       <section className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 justify-items-center ">
