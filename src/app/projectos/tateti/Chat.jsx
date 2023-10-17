@@ -1,7 +1,7 @@
 "use client";
 
 import "./scroll.css";
-import { ChatContext } from "@/app/context/chatContex";
+import { ChatContext } from "../../context/chatContex.jsx";
 import { useContext, useEffect, useState } from "react";
 
 export default function Chat({ socket }) {

@@ -1,4 +1,4 @@
-import { ChatContext } from "@/app/context/chatContex";
+import { ChatContext } from "../../context/chatContex";
 import { useContext, useEffect, useState } from "react";
 import { winCondition } from "./IsWining";
 

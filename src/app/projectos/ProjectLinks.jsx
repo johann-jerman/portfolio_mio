@@ -1,4 +1,3 @@
-import { cssIcon, htmlIcon, jsIcon, reactIcon } from "@/app/icons/icons";
 import Next from "../icons/Next";
 import React from "../icons/React";
 import JavaScript from "../icons/JavaScript";

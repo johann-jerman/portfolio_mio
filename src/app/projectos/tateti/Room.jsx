@@ -1,6 +1,6 @@
 "use client";
 
-import { ChatContext } from "@/app/context/chatContex";
+import { ChatContext } from "../../context/chatContex";
 import { useContext, useEffect } from "react";
 
 export default function Room({ socket }) {

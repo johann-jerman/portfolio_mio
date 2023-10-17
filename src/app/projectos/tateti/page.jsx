@@ -1,10 +1,10 @@
 "use client";
 
-import { socketServer } from "@/services/config";
+import { socketServer } from "../../../services/config.jsx";
 import { io } from "socket.io-client";
 import Room from "./Room";
 import Chat from "./Chat";
-import { ChatProvider } from "@/app/context/chatContex";
+import { ChatProvider } from "../../context/chatContex";
 import Game from "./Game";
 import Wins from "./Wins";
 
