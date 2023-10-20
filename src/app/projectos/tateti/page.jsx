@@ -11,13 +11,13 @@ import Wins from "./Wins";
 export default function Tateti() {
   const socket = io(socketServer);
   return (
-    <>
+    <main className=" min-h-full">
       <ChatProvider>
         <Room socket={socket} />
         <Game socket={socket} />
         <Chat socket={socket} />
         <Wins />
       </ChatProvider>
-    </>
+    </main>
   );
 }

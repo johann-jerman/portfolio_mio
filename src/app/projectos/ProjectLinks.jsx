@@ -37,7 +37,7 @@ export const projectLinks = [
         </i>,
       ],
       description:
-        "Proyecto de una Pokédex en línea desarrollada con la PokeAPI. Ofrece información detallada, búsqueda avanzada, imágenes, movimientos y más para todos los Pokémon. ¡Explora el mundo Pokémon en un solo lugar!",
+        "Tateti Challenge es un emocionante juego en línea que te permite poner a prueba tus habilidades en el clásico juego de Tateti contra un amigo en tiempo real. Este juego no solo te permite competir para demostrar quién es el mejor jugador en el tablero de 3x3, sino que también te brinda la oportunidad de interactuar y conversar con tu amigo a través de un chat en vivo mientras juegan",
     },
   },
   {

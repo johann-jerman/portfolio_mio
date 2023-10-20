@@ -7,10 +7,11 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { projectLinks } from "./projectos/ProjectLinks";
+const cvPath = "/cv/cv.pdf";
 
 export default function Home() {
   return (
-    <main className="min-h-screen grid grid-cols-1 md:grid-cols-2  py-4 my-6 max-w-6xl m-auto  bg-bc dark:bg-n">
+    <main className="min-h-screen grid grid-cols-1 md:grid-cols-2  py-4  max-w-6xl m-auto  bg-bc dark:bg-n">
       <aside className="">
         <Image
           src={"/image/johannImage.jpg"}
@@ -33,10 +34,17 @@ export default function Home() {
           <Link href={"https://github.com/johann-jerman"} target="_blank">
             {githubIcon}
           </Link>
-          <Link href={"johannjerman014@gmail.com"}>{mailIcon}</Link>
-          <Link className="hover:text-a-o" href={""} download={"/cv/cv.pdf"}>
+          <Link href={"mailto:johannjerman014@gmail.com"}>{mailIcon}</Link>
+          {/* <Link className="hover:text-a-o" href={""} download={"/cv/cv.pdf"}> */}
+          {/* {fileDownlodaIcon} */}
+          {/* </Link> */}
+          <a
+            className="hover:text-a-o"
+            href={cvPath}
+            download={"CV_JohannJerman"}
+          >
             {fileDownlodaIcon}
-          </Link>
+          </a>
         </div>
       </aside>
       <article className=" max-w-xl ">
