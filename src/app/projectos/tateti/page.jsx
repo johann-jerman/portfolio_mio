@@ -11,7 +11,7 @@ import Wins from "./Wins";
 export default function Tateti() {
   const socket = io(socketServer);
   return (
-    <main className=" min-h-full">
+    <main className=" min-h-screen">
       <ChatProvider>
         <Room socket={socket} />
         <Game socket={socket} />

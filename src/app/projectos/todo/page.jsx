@@ -35,7 +35,7 @@ export default function Todo() {
   };
 
   return (
-    <main className="py-4 min-h-full">
+    <main className="py-4 min-h-screen">
       <section>
         <section className="flex flex-wrap justify-center items-center">
           <input

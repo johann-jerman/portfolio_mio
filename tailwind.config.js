@@ -21,9 +21,11 @@ module.exports = {
         bc: "#f0fdfb",
         "a-o": "#136365",
         "a-c": "#1b8d90",
+        am: "#fefd11",
         rc: "#C4B5FD",
         cel: "#2277FF",
         ros: "#FF76AE",
+        roj: "#ff0f0f",
       },
       textColor: {
         ver: "#0e9393",

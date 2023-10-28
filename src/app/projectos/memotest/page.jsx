@@ -29,7 +29,7 @@ export default function MemoTest() {
   };
 
   return (
-    <main className="py-6 min-h-full">
+    <main className="py-6 min-h-screen">
       <aside className="m-auto max-w-xs text-center">
         <div
           className="text-xl bg-rc rounded py-3 cursor-pointer"
