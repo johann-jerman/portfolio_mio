@@ -21,7 +21,7 @@ function Projects() {
               <p className="text-4xl my-3 text-no dark:text-ver">
                 {project.name}
               </p>
-              <div className="my-1 flex">
+              <div className="my-1 flex ">
                 {project.data.tecnologies?.map((tec, i) => (
                   <div key={i} className="px-2">
                     {tec}

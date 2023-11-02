@@ -41,14 +41,15 @@ export default function Home() {
           <a
             className="hover:text-a-o"
             href={cvPath}
-            download={"CV_JohannJerman"}
+            target="_blank"
+            // download={"CV_JohannJerman"}
           >
             {fileDownlodaIcon}
           </a>
         </div>
       </aside>
       <article className=" max-w-xl ">
-        <h1 className=" text-5xl md:text-6xl py-3 text-a-c mb-2 hover:underline hover:scale-105 transition-all">
+        <h1 className=" text-5xl md:text-6xl py-3 text-a-c mb-2 hover:underline">
           Johann Jerman
         </h1>
         <h3 className="text-3xl my-2 flex gap-4">

@@ -9,14 +9,38 @@ import Node from "../icons/Node";
 import SocketIo from "../icons/Socket";
 import Postgres from "../icons/Postgres";
 import Docker from "../icons/Docker";
+import Swagger from "../icons/Swagger";
 
 const baseUrl = "/projectos/";
 const baseImg = "/project/";
 export const projectLinks = [
+  // {
+  //   name: "Fake Store Doc.",
+  //   url: `${baseUrl}fakestore.doc`,
+  //   img: `${baseImg}tateti.png`,
+  //   data: {
+  //     tecnologies: [
+  //       <i key={1} className="mx-2">
+  //         {<Node />}
+  //       </i>,
+  //       <i key={1} className="mx-2">
+  //         {<Express />}
+  //       </i>,
+  //       <i key={1} className="mx-2">
+  //         {<Postgres />}
+  //       </i>,
+  //       <i key={1} className="mx-2">
+  //         {<Docker />}
+  //       </i>,
+  //     ],
+  //     description:
+  //       "Tateti Challenge es un emocionante juego en línea que te permite poner a prueba tus habilidades en el clásico juego de Tateti contra un amigo en tiempo real. Este juego no solo te permite competir para demostrar quién es el mejor jugador en el tablero de 3x3, sino que también te brinda la oportunidad de interactuar y conversar con tu amigo a través de un chat en vivo mientras juegan",
+  //   },
+  // },
   {
     name: "Fake Store Doc.",
-    url: `${baseUrl}fakestore.doc`,
-    img: `${baseImg}tateti.png`,
+    url: process.env.API || `https://fakestore-e4ew.onrender.com/api/docs/`,
+    img: `${baseImg}fakestore.png`,
     data: {
       tecnologies: [
         <i key={1} className="mx-2">
@@ -30,6 +54,9 @@ export const projectLinks = [
         </i>,
         <i key={1} className="mx-2">
           {<Docker />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<Swagger />}
         </i>,
       ],
       description:
@@ -62,7 +89,7 @@ export const projectLinks = [
         </i>,
       ],
       description:
-        "Tateti Challenge es un emocionante juego en línea que te permite poner a prueba tus habilidades en el clásico juego de Tateti contra un amigo en tiempo real. Este juego no solo te permite competir para demostrar quién es el mejor jugador en el tablero de 3x3, sino que también te brinda la oportunidad de interactuar y conversar con tu amigo a través de un chat en vivo mientras juegan",
+        "API de productos ofrece un conjunto robusto de endpoints REST para gestionar productos, permitiendo operaciones de creación, lectura, actualización y eliminación de productos. Además, incluye un sistema de autenticación de usuarios basado en tokens, garantizando la seguridad de las interacciones. ",
     },
   },
   {
