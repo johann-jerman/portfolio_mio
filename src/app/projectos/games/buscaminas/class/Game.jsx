@@ -3,6 +3,7 @@ export class Game {
   board;
   width;
   boom = this.getBoom();
+  boombsLocation = [];
   // cellsClicked = [];
   cases = [
     [1, 0],
@@ -33,6 +34,7 @@ export class Game {
         continue;
       }
       booms.push(`${y}-${x}`);
+      this.boombsLocation.push(`${y}-${x}`);
       this.board[y][x] = this.boom;
       this.addNaerbyBooms(y, x);
     }
@@ -42,15 +44,44 @@ export class Game {
     if (new Date().getMonth() == 9) return "🎃";
     return "💣";
   }
+  getBoomsLocation() {
+    return this.boombsLocation;
+  }
   getNeabyCeros(y, x) {
     let ceros = [];
     for (let i = 0; i < this.cases.length; i++) {
-      let sting = `${y + this.cases[i][0]}-${x + this.cases[i][1]}`;
-      ceros.push(sting);
+      let newY = y + this.cases[i][0];
+      let newX = x + this.cases[i][1];
+
+      if (
+        newY >= 0 &&
+        newY < this.board.length &&
+        newX >= 0 &&
+        newX < this.board[0].length
+      ) {
+        let sting = `${newY}-${newX}`;
+        if (this.board[newY][newX] !== undefined) {
+          ceros.push(sting);
+        }
+      }
     }
     ceros.push(`${y}-${x}`);
     return ceros;
   }
+
+  // getNeabyCeros(y, x) {
+  //   let ceros = [];
+  //   for (let i = 0; i < this.cases.length; i++) {
+  //     let sting = `${y + this.cases[i][0]}-${x + this.cases[i][1]}`;
+  //     if (
+  //       this.board[y + this.cases[i][0]][x + this.cases[i][1]] !== undefined
+  //     ) {
+  //       ceros.push(sting);
+  //     }
+  //   }
+  //   ceros.push(`${y}-${x}`);
+  //   return ceros;
+  // }
   addNaerbyBooms(y, x) {
     for (let i = 0; i < this.cases.length; i++) {
       let newY = y + this.cases[i][0];

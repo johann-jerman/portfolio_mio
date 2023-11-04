@@ -14,14 +14,10 @@ export default function Board() {
       let ceros = board.getNeabyCeros(y, x);
       let newFlags = [];
       ceros.forEach((cero) => {
-        if (!flags.includes(cero)) {
+        if (!cellsClicked.includes(cero)) {
           newFlags.push(cero);
         }
       });
-
-      if (!newFlags.includes(board.board[y]?.[x])) {
-        newFlags.push(board.board[y]?.[x]);
-      }
       setCellClicked((flag) => [...flag, ...newFlags]);
     } else {
       setCellClicked((cells) => [...cells, `${y}-${x}`]);
@@ -66,7 +62,6 @@ export default function Board() {
           </button>
         </article>
       ) : null}
-
       <section className="py-8">
         {board.board?.map((row, y) => (
           <article key={y} className="flex justify-center items-center">
