@@ -17,7 +17,7 @@ module.exports = {
         no: "#16181C",
         n: "#121212",
         b: "#ffffff",
-        // bc: "#f5f5ee",
+        bo: "#f5f5ee",
         bc: "#f0fdfb",
         "a-o": "#136365",
         "a-c": "#1b8d90",

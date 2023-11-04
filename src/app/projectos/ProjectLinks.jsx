@@ -14,29 +14,6 @@ import Swagger from "../icons/Swagger";
 const baseUrl = "/projectos/";
 const baseImg = "/project/";
 export const projectLinks = [
-  // {
-  //   name: "Fake Store Doc.",
-  //   url: `${baseUrl}fakestore.doc`,
-  //   img: `${baseImg}tateti.png`,
-  //   data: {
-  //     tecnologies: [
-  //       <i key={1} className="mx-2">
-  //         {<Node />}
-  //       </i>,
-  //       <i key={1} className="mx-2">
-  //         {<Express />}
-  //       </i>,
-  //       <i key={1} className="mx-2">
-  //         {<Postgres />}
-  //       </i>,
-  //       <i key={1} className="mx-2">
-  //         {<Docker />}
-  //       </i>,
-  //     ],
-  //     description:
-  //       "Tateti Challenge es un emocionante juego en línea que te permite poner a prueba tus habilidades en el clásico juego de Tateti contra un amigo en tiempo real. Este juego no solo te permite competir para demostrar quién es el mejor jugador en el tablero de 3x3, sino que también te brinda la oportunidad de interactuar y conversar con tu amigo a través de un chat en vivo mientras juegan",
-  //   },
-  // },
   {
     name: "Fake Store Doc.",
     url: process.env.API || `https://fakestore-e4ew.onrender.com/api/docs/`,
@@ -119,6 +96,35 @@ export const projectLinks = [
       ],
       description:
         "Proyecto de una Pokédex en línea desarrollada con la PokeAPI. Ofrece información detallada, búsqueda avanzada, imágenes, movimientos y más para todos los Pokémon. ¡Explora el mundo Pokémon en un solo lugar!",
+    },
+  },
+  {
+    name: "Buscaminas",
+    url: `${baseUrl}/games/buscaminas`,
+    img: `${baseImg}buscaminas.png`,
+    data: {
+      tecnologies: [
+        <i key={1} className="mx-2">
+          {<HTML />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<Css />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<JavaScript />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<React />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<TailwndCss />}
+        </i>,
+        <i key={1} className="mx-2">
+          {<Next />}
+        </i>,
+      ],
+      description:
+        "Replica del tipico juego de Buscanubas donde tenemos que conseguir dar vuelta todas las fichas evitando que nos explote una bomba, cada ficha tiene un numero de la cantidad de bombas cercanas, cuidado en octubre trae SUSTOS",
     },
   },
   {
